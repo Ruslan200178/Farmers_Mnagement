@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmers Management</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">
+      <i class="fas fa-leaf"></i>
+      <span id="company">Farmers Management</span>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#tour">Tour</a></li>
+      </ul>
+    </div>
+    <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+    <div class="nav-close"><i class="fas fa-times"></i></div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <div class="header">
+      <div class="content">
+        <h1 id="title">Organic <span>Farming</span></h1>
+        <p>We provide high-quality organic food products, ranging<br>
+          from vegetables to fruits. We <b>only</b> grow and sell<br>
+          <b>non-GMO</b> products. Check out more below!</p>
+        <button onclick="learnMore()">Learn More <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <img src="download (1).jpeg" alt="Farming">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About</h2>
+    <div class="content">
+      <img src="organicfarm.jpeg" alt="Organic Farm" id="special">
+      <p>
+        Our mission is to provide customers with access to <br>
+        nutritious food that is free from genetically modified ingredients.<br>
+        We work with local farmers who share our commitment to <br>
+        organic agriculture, and we carefully select every product <br>
+        that we sell to ensure it meets our high quality standards.
+        <br><br>
+        <span>Why Choose Us?</span><br>
+        From fresh fruits and vegetables to dairy products, <br>
+        our selection of organic food supports a healthier planet.<br>
+        Free from harmful chemicals and GMOs.
+      </p>
+    </div>
+  </section>
+
+<!-- FEATURED PRODUCTS -->
+<section id="products" class="featured">
+  <h2>Featured Products</h2>
+
+  <div class="swiper featured-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide product-slide">
+        <img src="corrot.jpeg" alt="Carrots">
+        <h3>Organic Carrot</h3>
+        <p>Rs.200 per 500g</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide product-slide">
+        <img src="orange.jpg" alt="Oranges">
+        <h3>Oranges</h3>
+        <p>Rs.500 per 1kg</p>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide product-slide">
+        <img src="watermelon.jpeg" alt="Watermelon">
+        <h3>Watermelon</h3>
+        <p>Rs.350 per 1kg</p>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide product-slide">
+        <img src="Tomato.jpeg" alt="Tomatoes">
+        <h3>Tomatoes</h3>
+        <p>Rs.400 per 1kg</p>
+      </div>
+    </div>
+
+    <!-- Swiper Controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+<!-- TOUR SECTION -->
+<section id="tour" class="tour-section">
+  <h2>Tour</h2>
+  <p>Sign up for our farm tour and get free organic seeds for you to plant!</p>
+  <form id="tourForm">
+    <input type="email" placeholder="Enter Email" required>
+    <button type="submit">Sign Up</button>
+  </form>
+</section>
+  <!-- FOOTER -->
+  <footer style="text-align:center; padding: 20px; background: #333; color: white;">
+    &copy; 2025 Farmers Management. All rights reserved.
+  </footer>
+
+  <!-- Swiper -->
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Your Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
